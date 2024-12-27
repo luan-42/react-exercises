@@ -1,0 +1,74 @@
+.task-container {
+    height: fit-content;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-card{
+    margin: 1rem ;
+    width: min(90%, 500px);
+    padding: 2rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+    align-items: center;
+}
+
+.task-card > h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input-task {
+    display: flex;
+}
+
+.input-task > input[type="text"] {
+    border-radius: 1rem 0 0 1rem;
+    flex: 1;
+}
+
+.input-task > button {
+    border-radius: 0 1rem 1rem 0;
+    color: white;
+    background-color: #3e6abd;
+}
+
+.input-task > input[type="text"],
+.input-task > button {
+    outline: 1px solid rgb(182, 182, 182);
+    border: none;
+    padding: 0.5rem;
+}
+
+.input-task > input:focus {
+    outline: 1px solid black
+}
+
+.task {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.task > button {
+    background: none;
+    border: none;
+}
+
+.task-card > select {
+    outline: 1px solid rgb(182, 182, 182);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
