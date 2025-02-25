@@ -1,0 +1,13 @@
+.timerContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.time {
+    font-size: 6rem;
+    text-align: center;
+}

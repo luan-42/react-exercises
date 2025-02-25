@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Counter.css";
+import style from "./Counter.module.css";
 
 export default function Counter() {
     let [count, setCount] = useState(0);
@@ -13,10 +13,10 @@ export default function Counter() {
     }
 
     return (
-        <div className="counter-container">
-            <button className ="btn-counter" onClick={handleDecrement} style={{visibility: count > 0 ? "visible" : "hidden"}}>-</button>
-            <p className="counter">{count}</p>
-            <button className ="btn-counter" onClick={handleIncrement}>+</button>
+        <div className={style.counterContainer}>
+            <button className ={style.btnCounter} onClick={handleDecrement} style={{visibility: count > 0 ? "visible" : "hidden"}}>-</button>
+            <p className={style.counter}>{count}</p>
+            <button className={style.btnCounter} onClick={handleIncrement}>+</button>
         </div>
     );
 }

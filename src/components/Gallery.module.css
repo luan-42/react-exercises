@@ -1,0 +1,60 @@
+.title {
+    margin-top: 3rem;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.grid {
+    max-width: 1200px;
+    padding: 16px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max(30%, 250px), 1fr));
+    justify-content: center;
+    gap: 2px;
+}
+
+.grid img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    padding: 2rem;
+    background-color: #000e;
+}
+
+.modal img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.modal button {
+    background: none;
+    border: none;
+    color: white;
+    position: fixed;
+    cursor: pointer;
+}
+
+.left {
+    left: 16px;
+}
+
+.right {
+    right: 16px;
+}
+
+.close {
+    right: 16px;
+    top: 16px;
+}

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import deleteIcon from "../assets/delete.svg";
-import "./TaskList.css";
+import style from "./TaskList.module.css";
 
 function Task({task, handleTaskClick, handleRemoveTask}) {
     return (
-        <div className="task">
+        <div className={style.task}>
             <p onClick={() => {handleTaskClick(task.id)}} style={{textDecoration: task.isCompleted ? "line-through" : "none"}}>
                 {task.title}
             </p>
@@ -19,7 +19,7 @@ function Input({handleAddTask}) {
     let [input, setInput] = useState("");
 
     return (
-        <div className="input-task">
+        <div className={style.inputTask}>
             <input type="text" value={input} onChange={(event) => setInput(event.currentTarget.value)}/>
             <button onClick={() => {
                 handleAddTask(input);
@@ -31,7 +31,7 @@ function Input({handleAddTask}) {
 
 export default function TaskList() {
     let [tasks, setTasks] = useState([]);
-    let [filter, setFilter] = useState("todas");
+    let [filter, setFilter] = useState("all");
 
     const handleTaskClick = (id) => {
         setTasks((tasks) => tasks.map((task) => 
@@ -51,9 +51,9 @@ export default function TaskList() {
 
     const filterTasks = (tasks) => {
         switch (filter) {
-            case "concluídas":
+            case "completed":
                 return tasks.filter(task => task.isCompleted);
-            case "pendentes":
+            case "pending":
                 return tasks.filter(task => !task.isCompleted);
             default:
                 return tasks;
@@ -61,16 +61,16 @@ export default function TaskList() {
     }
 
     return (
-        <div className="task-container">
-            <div className="task-card">
-                <h1>Lista de tarefas</h1>
+        <div className={style.taskContainer}>
+            <div className={style.taskCard}>
+                <h1>To-do list</h1>
 
                 <Input handleAddTask= {handleAddTask}/>
 
                 <select onChange={(event) => {setFilter(event.currentTarget.value)}}>
-                    <option value="todas">Todas</option>
-                    <option value="concluídas">Tarefas concluídas</option>
-                    <option value="pendentes">Tarefas pendentes</option>
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="pending">Pending</option>
                 </select>
 
                 {filterTasks(tasks).map((task) => {

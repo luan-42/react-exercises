@@ -1,0 +1,27 @@
+.navbar ul{
+    font-size: 1rem;
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 100%;
+    height: fit-content;
+    display: flex;
+    overflow: auto;
+    list-style-type: none;
+    position: absolute;
+    inset: 0;
+    gap: 2rem;
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+    box-sizing: border-box;
+}
+
+.active {
+    font-weight: 700;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}

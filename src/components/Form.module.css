@@ -1,0 +1,42 @@
+.form {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    height: fit-content;
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.form button {
+    background-color: cadetblue;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form input {
+    padding: 8px;
+}
+
+.msg {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}

@@ -1,4 +1,4 @@
-.counter-container {
+.counterContainer {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -13,7 +13,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.btn-counter {
+.btnCounter {
     border: 1px solid gray;
     border-radius: 100%;
     width: 4rem;
@@ -24,7 +24,7 @@
 }
 
 @media (max-width: 500px) {
-    p {
+    .counterContainer p {
         order: -1;
         width: 100%;
         text-align: center;

@@ -1,4 +1,4 @@
-.task-container {
+.taskContainer {
     height: fit-content;
     min-height: 100vh;
     display: flex;
@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.task-card{
+.taskCard{
     margin: 1rem ;
     width: min(90%, 500px);
     padding: 2rem;
@@ -19,34 +19,34 @@
     align-items: center;
 }
 
-.task-card > h1 {
+.taskCard > h1 {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.input-task {
+.inputTask {
     display: flex;
 }
 
-.input-task > input[type="text"] {
+.inputTask > input[type="text"] {
     border-radius: 1rem 0 0 1rem;
     flex: 1;
 }
 
-.input-task > button {
+.inputTask > button {
     border-radius: 0 1rem 1rem 0;
     color: white;
     background-color: #3e6abd;
 }
 
-.input-task > input[type="text"],
-.input-task > button {
+.inputTask > input[type="text"],
+.inputTask > button {
     outline: 1px solid rgb(182, 182, 182);
     border: none;
     padding: 0.5rem;
 }
 
-.input-task > input:focus {
+.inputTask > input:focus {
     outline: 1px solid black
 }
 
@@ -66,7 +66,7 @@
     border: none;
 }
 
-.task-card > select {
+.taskCard > select {
     outline: 1px solid rgb(182, 182, 182);
     border: none;
     border-radius: 1rem;

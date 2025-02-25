@@ -1,0 +1,30 @@
+.container {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    height: 400px;
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+    border-radius: 1rem;
+}
+
+.container h1 {
+    margin-bottom: 2rem;
+}
+
+.container input {
+    height: 2rem;
+    width: 100%;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container li {
+    margin: 1rem 0;
+}
